@@ -18,8 +18,8 @@ function Login ()
                         <img src={logo} alt="logo" className='login-logo' />
                         <h2 className='login-text text-center'>Explore new courses... Hurry up!!</h2>
                         <form action="" className='login-form'>
-                            <input className='login-input' type="email" name="" id="" placeholder='Email Address' required />
-                            <input className='login-input' type="password" name="" id="" placeholder='Password' required />
+                            <input className='login-input' type="email" name="email" id="email" placeholder='Email Address' required />
+                            <input className='login-input' type="password" name="password" id="password" placeholder='Password' required />
                             <button className='btn forget-button'>Forget Password?</button>
                             <input type="submit" value="LOG IN" className='submit-button' />
                         </form>
