@@ -3,31 +3,107 @@
   grid-template-columns: 1000px auto;
 }
 
-.background {
+.left-side {
   background-color: black;
+  background-size: cover;
   padding-top: 79px;
-  padding-left: 150px;
+  padding-left: 130px;
   padding-right: 350px;
   padding-bottom: 22px;
 }
 
 .login-panel {
   background-color: white;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
   padding: 50px;
   position: relative;
   top: 50px;
   left: -150px;
 }
 
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-input {
+  width: 250px;
+  height: 30px;
+  border: 2px solid #666666;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+}
+
+.forget-button {
+  position: relative;
+  top: -15px;
+  left: 28%;
+  transform: translateX(-28%);
+  margin-bottom: 5px;
+  cursor: pointer;
+  background-color: white;
+  color: #ff0000;
+  border: none;
+}
+
+.submit-button {
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #625a99;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-divider {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 80px;
+  height: 0.5px;
+  width: 25%;
+  background-color: #666666;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 80px;
+  height: 0.5px;
+  width: 25%;
+  background-color: #666666;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+}
+
 .facebook-icon {
-  font-size: 55px;
+  font-size: 40px;
   color: #3b5998;
-  border: 1px solid rgb(240, 12, 50);
 }
 
 .google-icon {
-  font-size: 55px;
-  border: 1px solid rgb(240, 12, 50);
+  font-size: 42px;
+  margin-left: 50px;
 }
