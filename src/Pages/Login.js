@@ -11,22 +11,30 @@ function Login ()
         <main className='wrapper'>
             <div className='container'>
                 <div className='left-side'>
-                    <img src={bg} alt="abc" width={'auto'} height={'auto'} />
+                    <img src={bg} alt="abc" width={'auto'} height={'660'} />
                 </div>
                 <div className='right-side'>
                     <div className='login-panel'>
-                        <img src={logo} alt="logo" />
-                        <h2>Explore new courses... Hurry up!!</h2>
+                        <img src={logo} alt="logo" className='login-logo' />
+                        <h2 className='login-text text-center'>Explore new courses... Hurry up!!</h2>
                         <form action="" className='login-form'>
-                            <input className='login-input' type="email" name="" id="" placeholder='Email Address' />
-                            <input className='login-input' type="password" name="" id="" placeholder='Password' />
-                            <button className='forget-button'>Forget Password?</button>
+                            <input className='login-input' type="email" name="" id="" placeholder='Email Address' required />
+                            <input className='login-input' type="password" name="" id="" placeholder='Password' required />
+                            <button className='btn forget-button'>Forget Password?</button>
                             <input type="submit" value="LOG IN" className='submit-button' />
                         </form>
-                        <div className='form-divider line'>or</div>
+                        <div className='text-center form-divider line'>or</div>
                         <div className='social-icon'>
-                            <FaFacebook className='facebook-icon' />
-                            <FcGoogle className='google-icon' />
+                            <button className='btn mr'>
+                                <FaFacebook className='facebook-icon' />
+                            </button>
+                            <button className='btn'>
+                                <FcGoogle className='google-icon' />
+                            </button>
+                        </div>
+                        <div className='text-center signup'>
+                            Don't have an account?
+                            <button className='btn signup-button'>Sign Up</button>
                         </div>
                     </div>
                 </div>
