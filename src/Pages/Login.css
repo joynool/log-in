@@ -10,30 +10,39 @@
     #232323 28.23%,
     #252425 100%
   );
-  background-size: cover;
+  background-size: screen;
   padding-top: 79px;
   padding-left: 230px;
   padding-bottom: 22px;
+}
+
+.banner {
+  width: auto;
+  height: 660px;
+}
+
+.right-side {
+  width: fit-content;
 }
 
 .login-panel {
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
-  padding-left: 40px;
+  padding-left: 100px;
   padding-top: 120px;
-  padding-right: 10px;
+  padding-right: 50px;
   padding-bottom: 40px;
   position: relative;
   top: 50px;
-  left: -150px;
+  left: -120px;
 }
 
 .login-logo {
   width: 57px;
   height: 50px;
   position: relative;
-  left: 45%;
+  left: 40%;
 }
 
 .text-center {
@@ -104,9 +113,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 110px;
+  left: 30px;
   height: 0.5px;
-  width: 23%;
+  width: 35%;
   background-color: #666666;
 }
 
@@ -115,9 +124,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 110px;
+  right: 30px;
   height: 0.5px;
-  width: 23%;
+  width: 35%;
   background-color: #666666;
 }
 
@@ -156,16 +165,29 @@
 }
 
 @media screen and (max-width: 400px) {
+  * {
+    box-sizing: border-box;
+  }
+
   .container {
     grid-template-columns: auto;
   }
 
+  .left-side {
+    padding: 5px;
+  }
+
+  .banner {
+    width: 210px;
+    height: fit-content;
+  }
+
   .login-panel {
-    margin: 100px;
-    padding-left: 5px;
-    padding-top: 50px;
-    padding-right: 5px;
-    padding-bottom: 20px;
+    margin: 40px;
+    padding-left: 15px;
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 0px;
     left: 0px;
     top: -50%;
   }

@@ -11,7 +11,7 @@ function Login ()
         <main className='wrapper'>
             <div className='container'>
                 <div className='left-side'>
-                    <img src={bg} alt="abc" width={'auto'} height={'660'} />
+                    <img src={bg} alt="abc" className='banner' />
                 </div>
                 <div className='right-side'>
                     <div className='login-panel'>
