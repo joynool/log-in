@@ -157,9 +157,7 @@
 
 @media screen and (max-width: 400px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    grid-template-columns: auto auto;
   }
 
   .login-panel {
@@ -167,7 +165,5 @@
     padding-top: 50px;
     padding-right: 20px;
     padding-bottom: 20px;
-    left: 50%;
-    top: -600px;
   }
 }
